@@ -1,15 +1,22 @@
+Android Icon Deployment
+=======================
+
+
+This shell script make you get the material icon into your project easily.
+
+
 Usage
 =====
 
-        aid.sh [-c color] [-p project/path] icon_name
+    aid.sh [-c color] [-p project/path] icon_name
 
-    You can omit project path if you execute "aid.sh" in Android project root where you want to put the icon.
+You can omit project path if you execute "aid.sh" in Android project root where you want to put the icon.
 
 
 Example
 =======
 
-        $ aid.sh -c red -p android/project/path done
+    $ aid.sh -c red -p android/project/path done
 
 
 Licence
