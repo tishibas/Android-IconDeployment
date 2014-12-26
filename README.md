@@ -2,7 +2,9 @@ Android Icon Deployment
 =======================
 
 
-"aid.sh" makes it easy to deploy the material icon to your project.
+"aid.sh" makes it easy to deploy the material icon to your Android Studio project.
+
+You can choose the icon from https://google.github.io/material-design-icons/
 
 
 Prerequisites
