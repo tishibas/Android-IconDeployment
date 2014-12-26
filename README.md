@@ -2,8 +2,13 @@ Android Icon Deployment
 =======================
 
 
-This shell script make you get the material icon into your project easily.
+"aid.sh" makes it easy to deploy the material icon to your project.
 
+
+Prerequisites
+-------------
+
+ * [Incscape][1] is professional quality vector graphics software.
 
 Usage
 =====
@@ -14,7 +19,7 @@ You can omit project path if you execute "aid.sh" in Android project root where 
 
 
 Example
-=======
+-------
 
     $ aid.sh -c red -p path/to/project done
 
@@ -35,3 +40,6 @@ Licence
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
+
+[1] https://inkscape.org/en/
