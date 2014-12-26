@@ -8,7 +8,7 @@ Android Icon Deployment
 Prerequisites
 -------------
 
- * [Inkscape][1] is professional quality vector graphics software.
+ * **[Inkscape][1]** is professional quality vector graphics software.
 
 Usage
 =====
