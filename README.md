@@ -15,7 +15,7 @@ Prerequisites
 Usage
 =====
 
-    aid.sh [-c color] [-p path/to/project] icon_name
+    aid.sh [-c color] [-p /path/to/android-studio-project] icon_name
 
 You can omit project path if you execute "aid.sh" in Android project root where you want to put the icon.
 
@@ -23,7 +23,7 @@ You can omit project path if you execute "aid.sh" in Android project root where 
 Example
 -------
 
-    $ aid.sh -c red -p path/to/project done
+    $ aid.sh -c red -p /path/to/android-studio-project done
 
 
 Licence
