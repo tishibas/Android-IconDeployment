@@ -111,19 +111,27 @@ $SED -i -e "s/\(path d=.*\)\(\/>$\)/\1 fill=\"$COLOR\"\2/" /tmp/$ICON_SVG
 $SED -i -e "s/\(fill=\"none\"\) \(fill=\"$COLOR\"\)/\1/" /tmp/$ICON_SVG
 
 echo "Converting svg to png ..."
-$INKSCAPE -z -e ic_${ICON}_32px.png -w 32 -h 32 /tmp/$ICON_SVG >> /dev/null
+$INKSCAPE -z -e ic_${ICON}_24px.png -w 24 -h 24 /tmp/$ICON_SVG >> /dev/null
+$INKSCAPE -z -e ic_${ICON}_36px.png -w 36 -h 36 /tmp/$ICON_SVG >> /dev/null
 $INKSCAPE -z -e ic_${ICON}_48px.png -w 48 -h 48 /tmp/$ICON_SVG >> /dev/null
-$INKSCAPE -z -e ic_${ICON}_64px.png -w 64 -h 64 /tmp/$ICON_SVG >> /dev/null
+$INKSCAPE -z -e ic_${ICON}_72px.png -w 72 -h 72 /tmp/$ICON_SVG >> /dev/null
+$INKSCAPE -z -e ic_${ICON}_96px.png -w 96 -h 96 /tmp/$ICON_SVG >> /dev/null
 
 
 if [ -d ${DRAWABLE_DIR}-mdpi ]; then
-    $MV ic_${ICON}_32px.png ${DRAWABLE_DIR}-mdpi/ic_${ICON}.png
+    $MV ic_${ICON}_24px.png ${DRAWABLE_DIR}-mdpi/ic_${ICON}.png
 fi
 if [ -d ${DRAWABLE_DIR}-hdpi ]; then
-    $MV ic_${ICON}_48px.png ${DRAWABLE_DIR}-hdpi/ic_${ICON}.png
+    $MV ic_${ICON}_36px.png ${DRAWABLE_DIR}-hdpi/ic_${ICON}.png
 fi
 if [ -d ${DRAWABLE_DIR}-xhdpi ]; then
-    $MV ic_${ICON}_64px.png ${DRAWABLE_DIR}-xhdpi/ic_${ICON}.png 
+    $MV ic_${ICON}_48px.png ${DRAWABLE_DIR}-xhdpi/ic_${ICON}.png
+fi
+if [ -d ${DRAWABLE_DIR}-xxhdpi ]; then
+    $MV ic_${ICON}_72px.png ${DRAWABLE_DIR}-xxhdpi/ic_${ICON}.png 
+fi
+if [ -d ${DRAWABLE_DIR}-xxxhdpi ]; then
+    $MV ic_${ICON}_96px.png ${DRAWABLE_DIR}-xxxhdpi/ic_${ICON}.png
 fi
 
 echo "success!"
