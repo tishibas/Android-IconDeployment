@@ -28,6 +28,7 @@ MV=`which mv`
 PERL=`which perl`
 GREP=`which grep`
 SED=`which sed`
+RM=`which rm`
 
 
 usage(){
@@ -132,6 +133,8 @@ if [ -d ${DRAWABLE_DIR}-xxhdpi ]; then
 fi
 if [ -d ${DRAWABLE_DIR}-xxxhdpi ]; then
     $MV ic_${ICON}_96px.png ${DRAWABLE_DIR}-xxxhdpi/ic_${ICON}.png
+else
+    $RM ic_${ICON}_96px.png
 fi
 
 echo "success!"
